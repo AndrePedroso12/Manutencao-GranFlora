@@ -1,0 +1,141 @@
+body {
+  min-height: 98vh;
+  background: url(bg-blur.png);
+  background-size: cover;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+header {
+  background: rgb(255 255 255 / 90%);
+  border-radius: 0 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8rem;
+}
+
+header .logo {
+  height: 6rem;
+  width: auto;
+  margin: auto;
+}
+
+header .contatos {
+  display: flex;
+  float: right;
+  position: absolute;
+  right: 5%;
+  top: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: #545761;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header .contatos .link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 13px;
+  justify-content: flex-start;
+}
+
+header .contatos .link a {
+  text-decoration: none;
+  color: #545761;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: auto;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+}
+
+.center .alternates {
+  font-family: "Montserrat Alternates", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+.center p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-align: center;
+  width: 35%;
+}
+
+.center .botao-contato {
+  background: #438532;
+  font-family: "Montserrat";
+  color: #fafafa;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 40px;
+}
+
+.center .contatos {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+  gap: 3rem;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+.center .contatos a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.center .contatos a img {
+  filter: brightness(100);
+}
+
+@media (max-width: 768px) {
+  header {
+    top: 0dvh;
+    height: 6rem;
+  }
+  header .logo {
+    height: 5rem;
+    width: auto;
+  }
+
+  header .contatos {
+    display: none;
+  }
+  .center img {
+    max-width: 85%;
+  }
+
+  .center p {
+    width: 70%;
+  }
+
+  .center .contatos {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+}
